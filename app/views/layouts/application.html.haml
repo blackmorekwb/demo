@@ -46,5 +46,8 @@
               %li= link_to "Link 1", "/path1"
               %li= link_to "Link 2", "/path2"
               %li= link_to "Link 3", "/path3"
-      %footer
-        %p &copy; Company 2015
+
+    .navbar.navbar-inverse.navbar-fixed-bottom
+      .footer
+        %ul.nav.navbar-nav.navbar
+          = render 'layouts/footer'
