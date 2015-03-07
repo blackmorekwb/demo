@@ -31,20 +31,35 @@
             = render 'layouts/header'
 
     .container
+      .jumbotron.text-center
+        %h1 Blackmore Demo
+        = link_to 'Take a Tour', '#', class: 'btn btn-primary'
+        = link_to 'About Me', '#', class: 'btn btn-primary'
       .row
-        .col-lg-9
-          = bootstrap_flash
-          = yield
-        .col-lg-3
-          .well.sidebar-nav
-            %h3 Sidebar
-            %ul.nav.nav-list
-              %li.nav-header Sidebar
-              %li= link_to "Link 1", "/path1"
-              %li= link_to "Link 2", "/path2"
-              %li= link_to "Link 3", "/path3"
-
+        .col-md-4
+          %h4 Front End
+          %p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          = link_to 'Read More', '#', class: 'btn btn-primary'
+        .col-md-4
+          %h4 Back End
+          %p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          = link_to 'Read More', '#', class: 'btn btn-primary'
+        .col-md-4.text-center
+          %h4 Contact Me
+          = link_to 'Click Here!', '#', class: 'btn btn-success'
     .navbar.navbar-inverse.navbar-fixed-bottom
       .container
         %ul.nav.navbar-nav.navbar
           = render 'layouts/footer'
+-#      .row
+-#        .col-lg-9
+-#          = bootstrap_flash
+-#          = yield
+-#        .col-lg-3
+-#          .well.sidebar-nav
+-#            %h3 Sidebar
+-#            %ul.nav.nav-list
+-#              %li.nav-header Sidebar
+-#              %li= link_to "Link 1", "/path1"
+-#              %li= link_to "Link 2", "/path2"
+-#              %li= link_to "Link 3", "/path3"
