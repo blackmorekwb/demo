@@ -14,8 +14,13 @@
  *= require_self
  */
 
+              /*  Container */
+.container{
 
-
+  .row {
+    padding-bottom: 45px;
+  }
+}
 
               /*  Footer  */
 .navbar-fixed-bottom {

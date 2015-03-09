@@ -31,24 +31,8 @@
             = render 'layouts/header'
 
     .container
-      .jumbotron.text-center
-        %h1 Blackmore Demo
-        = link_to 'Take a Tour', '#', class: 'btn btn-primary'
-        = link_to 'About Me', '#', class: 'btn btn-primary'
-      .row
-        .col-md-4
-          %h4 Front End
-          = image_tag('frontend.png', size: '320x200')
-          %p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          = link_to 'Read More', '#', class: 'btn btn-primary'
-        .col-md-4
-          %h4 Back End
-          = image_tag('backend.png',size: '320x200')
-          %p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          = link_to 'Read More', '#', class: 'btn btn-primary'
-        .col-md-4.text-center
-          %h4 Contact Me
-          = link_to 'Click Here!', '#', class: 'btn btn-success'
+      = render 'layouts/main_content'
+
     .navbar.navbar-inverse.navbar-fixed-bottom
       .container
         = render 'layouts/footer'
