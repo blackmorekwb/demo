@@ -1,0 +1,28 @@
+#carousel-example-generic.carousel.slide{"data-ride" => "carousel", "data-interval" => "25000"}
+  / Indicators
+  %ol.carousel-indicators
+    %li.active{"data-slide-to" => "0", "data-target" => "#carousel-example-generic"}
+    %li{"data-slide-to" => "1", "data-target" => "#carousel-example-generic"}
+    %li{"data-slide-to" => "2", "data-target" => "#carousel-example-generic"}
+  / Wrapper for slides
+  .carousel-inner
+    .item.active
+      = link_to 'More Info', '#', class: 'btn btn-success center-vertically', id: 'button-more-info'
+      .pull-right
+        = link_to image_tag("blog.jpg", :alt => "Slide1"), {:class => "img-responsive", :alt => "Responsive image"}
+
+    .item
+      %img{:alt => "...", :src => "http://placehold.it/1200x315"}
+        .carousel-caption
+          %h3 Caption Text
+    .item
+      %img{:alt => "...", :src => "http://placehold.it/1200x315"}
+        .carousel-caption
+          %h3 Caption Text
+  / Controls
+  %a.left.carousel-control{"data-slide" => "prev", :href => "#carousel-example-generic", :role => "button"}
+    .fa.fa-chevron-left
+  %a.right.carousel-control{"data-slide" => "next", :href => "#carousel-example-generic", :role => "button"}
+    .fa.fa-chevron-right
+    -#%span.glyphicon.glyphicon-chevron-right -#todo why wont bootstrap icons load
+/ Carousel

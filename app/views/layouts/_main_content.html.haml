@@ -1,33 +1,7 @@
-#carousel-example-generic.carousel.slide{"data-ride" => "carousel", "data-interval" => "4000"}
-  / Indicators
-  %ol.carousel-indicators
-    %li.active{"data-slide-to" => "0", "data-target" => "#carousel-example-generic"}
-    %li{"data-slide-to" => "1", "data-target" => "#carousel-example-generic"}
-    %li{"data-slide-to" => "2", "data-target" => "#carousel-example-generic"}
-  / Wrapper for slides
-  .carousel-inner
-    .item.active
-      %img{:alt => "...", :src => "http://placehold.it/1200x315"}
-        .carousel-caption
-          %h3 Caption Text
-    .item
-      %img{:alt => "...", :src => "http://placehold.it/1200x315"}
-        .carousel-caption
-          %h3 Caption Text
-    .item
-      %img{:alt => "...", :src => "http://placehold.it/1200x315"}
-        .carousel-caption
-          %h3 Caption Text
-  / Controls
-  %a.left.carousel-control{"data-slide" => "prev", :href => "#carousel-example-generic", :role => "button"}
-    %span.fa.fa-chevron-left
-  %a.right.carousel-control{"data-slide" => "next", :href => "#carousel-example-generic", :role => "button"}
-    %span.glyphicon.glyphicon-chevron-right
-/ Carousel
--#.jumbotron.text-center
--#  %h1 Blackmore Demo
--#  = link_to 'Take a Tour', '#', class: 'btn btn-primary'
--#  = link_to 'About Me', '#', class: 'btn btn-primary'
+.jumbotron.text-center
+  %h1 Blackmore Demo
+  = link_to 'Take a Tour', '#', class: 'btn btn-primary'
+  = link_to 'About Me', '#', class: 'btn btn-primary'
 .row
   .col-md-8
     %h3 Front End
@@ -42,8 +16,12 @@
     %h3 Back End
     %p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
     = link_to 'Read More', '#', class: 'btn btn-primary'
+
+= render 'layouts/main_carousel'
+  
 .row
   .col-md-12.text-center
-    %h4 Contact Me
+    %h3 Contact Me
     = link_to 'Click Here!', '#', class: 'btn btn-success'
+
 %br -# Fix spacing without use of <br>
