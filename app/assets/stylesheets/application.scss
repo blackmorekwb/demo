@@ -13,3 +13,22 @@
  *= require_tree .
  *= require_self
  */
+
+              /*  Container */
+.container{
+
+  .row {
+    padding-bottom: 45px;
+  }
+}
+
+              /*  Footer  */
+.navbar-fixed-bottom {
+
+  .pull-right {
+
+    .fa {
+      padding: 10px;
+    }
+  }
+}
