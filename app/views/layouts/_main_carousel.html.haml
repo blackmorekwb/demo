@@ -1,4 +1,4 @@
-#carousel-example-generic.carousel.slide{"data-ride" => "carousel", "data-interval" => "25000"}
+#carousel-example-generic.carousel.slide{"data-ride" => "carousel", "data-interval" => "4500"}
   / Indicators
   %ol.carousel-indicators
     %li.active{"data-slide-to" => "0", "data-target" => "#carousel-example-generic"}
@@ -7,7 +7,9 @@
   / Wrapper for slides
   .carousel-inner
     .item.active
-      = link_to 'More Info', '#', class: 'btn btn-success center-vertically', id: 'button-more-info'
+      .slide-one-content.text-center
+        %h3 Interactive Design
+        = link_to 'More Info', '#', class: 'btn btn-success', id: 'button-more-info'
       .pull-right
         = link_to image_tag("blog.jpg", :alt => "Slide1"), {:class => "img-responsive", :alt => "Responsive image"}
 

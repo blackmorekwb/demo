@@ -14,6 +14,9 @@
  *= require_self
  */
 
+ @import "mixins";
+
+
               /*  Container */
 .container{
 
@@ -26,8 +29,24 @@
               /*  Carousel  */
 .carousel {
   margin-bottom: 50px;
-  .fa {
-    padding-top: 50%;
+
+  .carousel-control {
+    //padding-top: 15%;
+
+    .fa {
+      @include align-vertically;
+    }
+  }
+
+  .slide-one-content {
+
+      position: absolute;
+      left: 20%;
+      margin-top: 15%;
+
+      #button-more-info {
+        margin-top: 20px;
+      }
   }
 }
               /*  Footer  */
