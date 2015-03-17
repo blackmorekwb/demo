@@ -18,10 +18,23 @@
     = link_to 'Read More', '#', class: 'btn btn-primary'
 
 = render 'layouts/main_carousel'
-  
+
 .row
   .col-md-12.text-center
     %h3 Contact Me
-    = link_to 'Click Here!', '#', class: 'btn btn-success'
+    = link_to 'Click Here!', '#contact', class: 'btn btn-success', "data-toggle" => 'modal'
+
+.modal.fade{id:'contact'}
+  .modal-dialog
+    .modal-content
+      .modal-header
+        %button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+          %span{"aria-hidden" => "true"} &times;
+        %h4.modal-title Contact Form
+      .modal-body
+        %p Form to email myself
+      .modal-footer
+        %button.btn.btn-default{"data-dismiss" => "modal", :type => "button"} Cancel
+        %button.btn.btn-primary{:type => "button"} Send Message
 
 %br -# Fix spacing without use of <br>
