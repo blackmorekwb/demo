@@ -1,0 +1,29 @@
+.row
+  .col-md-4
+    = image_tag('backend.png',size: '320x200')
+  .col-md-8.text-right
+    %h3 Back End
+    %p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    %button.btn.btn-primary{ 'data-toggle' => 'collapse', 'data-target' => '#back-end'} Read More
+#back-end.collapse.popout
+  %div{role: 'tabpanel'}
+    / Nav tabs / Hover is in app js
+    %ul.nav.nav-tabs.pull-right{role: 'tablist'}
+      %li.active{role: 'presentation'}
+        = link_to image_tag('database.png', size: '80x80'),     '#tabs-1', 'aria-controls': 'database', 'data-toggle': 'tab', href: '#database',     role: 'tab'
+      %li{role: 'presentation'}
+        = link_to image_tag('mysql.png', size: '80x80'),        '#tabs-2', 'aria-controls': 'mysql',    'data-toggle': 'tab', href: '#mysql',        role: 'tab'
+      %li{role: 'presentation'}
+        = link_to image_tag('postgresql.png', size: '80x80'),   '#tabs-3', 'aria-controls': 'pg',       'data-toggle': 'tab', href: '#pg',           role: 'tab'
+      %li{role: 'presentation'}
+        = link_to image_tag('commerce.png', size: '110x80'),    '#tabs-4', 'aria-controls': 'commerce', 'data-toggle': 'tab', href: '#commerce',     role: 'tab'
+    / Tab panes
+    .tab-content
+      #database.tab-pane.fade.in.active{role: 'tabpanel'}
+        %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      #mysql.tab-pane.fade{role: 'tabpanel'}
+        %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      #pg.tab-pane.fade{role: 'tabpanel'}
+        %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      #commerce.tab-pane.fade{role: 'tabpanel'}
+        %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.

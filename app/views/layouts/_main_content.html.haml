@@ -2,27 +2,17 @@
   %h1 Blackmore Demo
   = link_to 'Take a Tour', '#', class: 'btn btn-primary'
   = link_to 'About Me', '#', class: 'btn btn-primary'
-.row
-  .col-md-8
-    %h3 Front End
-    %p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    = link_to 'Read More', '#', class: 'btn btn-primary'
-  .col-md-4
-    = image_tag('frontend.png', size: '320x200')
-.row
-  .col-md-4
-    = image_tag('backend.png',size: '320x200')
-  .col-md-8.text-right
-    %h3 Back End
-    %p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    = link_to 'Read More', '#', class: 'btn btn-primary'
 
+= render 'layouts/front_end'
+
+= render 'layouts/back_end'
+  
 = render 'layouts/main_carousel'
 
 .row
   .col-md-12.text-center
     %h3 Contact Me
-    = link_to 'Click Here!', '#contact', class: 'btn btn-success', "data-toggle" => 'modal'
+    = link_to 'Click Here!', '#contact', class: 'btn btn-success', 'data-toggle' => 'modal'
 
 .modal.fade{id:'contact'}
   .modal-dialog

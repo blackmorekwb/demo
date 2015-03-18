@@ -12,6 +12,16 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery-ui
 //= require twitter/bootstrap
 //= require turbolinks
 //= require_tree .
+
+$(document).ready(function() {
+
+  // Hover ability on TABS
+  $('.nav-tabs > li > a').hover( function(){
+    $(this).tab('show');
+  });
+
+});
