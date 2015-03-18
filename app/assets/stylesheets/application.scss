@@ -16,34 +16,17 @@
  */
 
  @import "mixins";
-.ui-tabs-anchor {
-  width: 100%;
-}
 
               /*  Container */
 .container{
 
   .row {
-    margin-bottom: 65px;
+    margin-bottom: 50px;
   }
 
-  .popout {
-    /* Popout instead of collapse; naming issues with other collapse methods */
-
-    #front-end {
-      width: 70%;
-      left: 50%;
-      margin-bottom: 15%;
-
-      #tabs {
-        background-color: 222222;
-      }
-    }
-
-
-    img {
-      //margin-right: 25%;
-    }
+  .popout { //popout instead of collaps / naming issues with other collapse methods
+    margin-bottom: 50px;
+    min-height: 150px;
   }
 }
 

@@ -18,7 +18,10 @@
 //= require_tree .
 
 $(document).ready(function() {
-  $( "#tabs" ).tabs({
-    event: "mouseover"
+
+  // Hover ability on TABS
+  $('.nav-tabs > li > a').hover( function(){
+    $(this).tab('show');
   });
+
 });
