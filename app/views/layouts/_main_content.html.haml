@@ -6,23 +6,65 @@
   .col-md-8
     %h3 Front End
     %p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    = link_to 'Read More', '#', class: 'btn btn-primary'
+    -#= link_to 'Read More', '#', class: 'btn btn-primary', 'data-toggle' => 'collapse', 'data-target' => '#front-end', "aria-controls" => "collapseExample", "aria-expanded" => "false"
+    %button.btn.btn-primary{ 'data-toggle' => 'collapse', 'data-target' => '#front-end'} Read More
   .col-md-4
     = image_tag('frontend.png', size: '320x200')
+#front-end.collapse
+  #tabs
+    %ul
+      %li
+        = link_to image_tag('bootstrap.png', size: '80x80'), '#tabs-1'
+      %li
+        = link_to image_tag('jquery.png', size: '80x80'), '#tabs-2'
+      %li
+        = link_to image_tag('multiplatform.png', size: '80x80'), '#tabs-3'
+      %li
+        = link_to image_tag('bootstrap.png', size: '80x80'), '#tabs-4'  
+    #tabs-1
+      %p Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitd ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.
+    #tabs-2
+      %p Morbi ornare leo nisi vel felis. Mauris consectetur tortor et purus.
+    #tabs-3
+      %p Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, peue. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.
+      %p Duis e nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.
+  .popout.icons
+    .col-md-2.text-center
+      = image_tag('bootstrap.png', size: '80x80')
+    .col-md-2.text-center
+      = image_tag('jquery.png', size: '80x80')
+    .col-md-2.text-center
+      = image_tag('multiplatform.png', size: '80x80')
+    .col-md-2.text-center
+      = image_tag('bootstrap.png', size: '80x80')
+    .col-md-2.text-center
+      = image_tag('jquery.png', size: '80x80')
+    .col-md-2.text-center
+      = image_tag('bootstrap.png', size: '80x80')
+
 .row
   .col-md-4
     = image_tag('backend.png',size: '320x200')
   .col-md-8.text-right
     %h3 Back End
     %p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    = link_to 'Read More', '#', class: 'btn btn-primary'
-
+    %button.btn.btn-primary{ 'data-toggle' => 'collapse', 'data-target' => '#back-end'} Read More
+#back-end.popout.collapse
+  .col-md-3.text-center
+    = image_tag('database.png', size: '80x80')
+  .col-md-3.text-center
+    = image_tag('mysql.png', size: '100x70')
+  .col-md-3.text-center
+    = image_tag('postgresql.png', size: '80x80')
+  .col-md-3.text-center
+    = image_tag('multiplatform.png', size: '100x70')
+%br
 = render 'layouts/main_carousel'
 
 .row
   .col-md-12.text-center
     %h3 Contact Me
-    = link_to 'Click Here!', '#contact', class: 'btn btn-success', "data-toggle" => 'modal'
+    = link_to 'Click Here!', '#contact', class: 'btn btn-success', 'data-toggle' => 'modal'
 
 .modal.fade{id:'contact'}
   .modal-dialog

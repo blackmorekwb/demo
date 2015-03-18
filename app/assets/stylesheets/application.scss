@@ -12,16 +12,38 @@
  *
  *= require_tree .
  *= require_self
+ *= require jquery-ui
  */
 
  @import "mixins";
-
+.ui-tabs-anchor {
+  width: 100%;
+}
 
               /*  Container */
 .container{
 
   .row {
-    margin-bottom: 45px;
+    margin-bottom: 65px;
+  }
+
+  .popout {
+    /* Popout instead of collapse; naming issues with other collapse methods */
+
+    #front-end {
+      width: 70%;
+      left: 50%;
+      margin-bottom: 15%;
+
+      #tabs {
+        background-color: 222222;
+      }
+    }
+
+
+    img {
+      //margin-right: 25%;
+    }
   }
 }
 
@@ -29,6 +51,7 @@
               /*  Carousel  */
 .carousel {
   margin-bottom: 50px;
+  padding-top: 50px;
 
   .carousel-control {
     //padding-top: 15%;
