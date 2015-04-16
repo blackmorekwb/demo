@@ -27,10 +27,41 @@
   .popout { //popout instead of collaps / naming issues with other collapse methods
     margin-bottom: 50px;
     min-height: 150px;
+
+
+    img {
+      transition: all 0.3s ease 0s;
+    }
+    img:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  .contact-well {
+    //min-height: 250px;
+
+  }
+
+}
+/*
+@keyframes colorPulse {
+  to {
+    background-color: #222222;
   }
 }
 
+#contact-btn {
+  animation-name: colorPulse;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+}
 
+//.element {
+//  animation: fade 1s 0s infinite linear alternate;
+//} */
               /*  Carousel  */
 .carousel {
   margin-bottom: 50px;

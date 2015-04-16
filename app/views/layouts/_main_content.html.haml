@@ -6,13 +6,16 @@
 = render 'layouts/front_end'
 
 = render 'layouts/back_end'
-  
+
 = render 'layouts/main_carousel'
 
 .row
-  .col-md-12.text-center
+  .col-md-12.well.text-center.contact-well
     %h3 Contact Me
-    = link_to 'Click Here!', '#contact', class: 'btn btn-success', 'data-toggle' => 'modal'
+
+.row
+  .col-md-12.well.text-center.contact-well
+    = link_to 'Click Here!', '#contact', class: 'btn btn-success', id: 'contact-btn', 'data-toggle': 'modal'
 
 .modal.fade{id:'contact'}
   .modal-dialog
@@ -26,5 +29,11 @@
       .modal-footer
         %button.btn.btn-default{"data-dismiss" => "modal", :type => "button"} Cancel
         %button.btn.btn-primary{:type => "button"} Send Message
+
+
+.row
+  .col-md-6.well.text-center#pg-well
+    %button.btn.btn-success{class: 'btn btn-success', id: 'pg-btn'} pgbtn
+
 
 %br -# Fix spacing without use of <br>
