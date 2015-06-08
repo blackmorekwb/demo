@@ -1,5 +1,12 @@
-- unless session[:user_id]
-  %li= link_to 'Sign In', '#' #:sign_in
-- else
-  %li= link_to 'Home', root_path #homepage_index_path
-  %li= link_to 'Sign Out', '#' #:sign_out
+%button.navbar-toggle(type="button" data-toggle="collapse" data-target=".responsive-header")
+  %span.icon-bar
+  %span.icon-bar
+  %span.icon-bar
+%a.navbar-brand(href=root_path) BlackmoreDemo
+.navbar-collapse.collapse.responsive-header
+  %ul.nav.navbar-nav.pull-right
+    - unless session[:user_id]
+      %li= link_to 'Sign In', '#' #:sign_in
+    - else
+      %li= link_to 'Home', root_path #homepage_index_path
+      %li= link_to 'Sign Out', '#' #:sign_out

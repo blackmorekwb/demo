@@ -21,14 +21,7 @@
   %body
     .navbar.navbar-inverse.navbar-static-top
       .container
-        %button.navbar-toggle(type="button" data-toggle="collapse" data-target=".navbar-responsive-collapse")
-          %span.icon-bar
-          %span.icon-bar
-          %span.icon-bar
-        %a.navbar-brand(href=root_path) BlackmoreDemo
-        .navbar-collapse.collapse.navbar-responsive-collapse
-          %ul.nav.navbar-nav.navbar-right
-            = render 'layouts/header'
+        = render 'layouts/header'
 
     .container
       = render 'layouts/main_content'
